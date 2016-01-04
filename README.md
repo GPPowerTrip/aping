@@ -18,6 +18,6 @@ as well as the command the plugin responds to.
 	KnightPlug: org.powertrip.excalibot.common.plugins.aping.Bot
 
 
-## Question?
+## Questions?
 
 	
