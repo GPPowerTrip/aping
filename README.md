@@ -16,3 +16,8 @@ as well as the command the plugin responds to.
 	Command: aping
 	ArthurPlug: org.powertrip.excalibot.common.plugins.aping.Server
 	KnightPlug: org.powertrip.excalibot.common.plugins.aping.Bot
+
+
+## Question?
+
+	
