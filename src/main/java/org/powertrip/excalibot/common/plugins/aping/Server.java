@@ -21,12 +21,7 @@ public class Server extends ArthurPlug{
 
 	@Override
 	public PluginHelp help() {
-		return new PluginHelp().setHelp(
-						"::aping\n" +
-						"\tAverage Ping\n" +
-						"\tUsage: aping address:<address> bots:<bots>\n"
-
-		);
+		return new PluginHelp().setHelp("::aping [Average Ping] Usage: aping address:<address> bots:<bots>");
 	}
 
 	@Override
@@ -101,7 +96,7 @@ public class Server extends ArthurPlug{
 			List<KnightInfo> bots = knightManager.getFreeKnightList(50000).subList(0, (int) botCount);
 			for(KnightInfo bot : bots){
 				knightManager.dispatchToKnight(
-						new SubTask(task, bot, false)
+						new SubTask(task, bot)
 								.setParameter("address", address)
 				);
 			}
